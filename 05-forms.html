@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Register for our site today</h1>
+    <form action="processor.html" method="GET">
+        <p>Please fill out the below information to <em>register</em> for our site! Don't forget to be
+            <strong>honest</strong> with your answers.
+        </p>
+        <p>
+            <label>Account Type: </label>
+            <input type="radio" id="personal" name="accountType" value="personal" checked>
+            <label for="personal">Personal Account</label>
+            <input type="radio" id="business" value="business" name="accountType">
+            <label for="business">Business Account</label>
+        </p>
+        <p>
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required>
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter you last name" required>
+        </p>
+        <p>
+            <label for="state">State of Residence: </label>
+            <select id="state" name="state" required>
+                <option value="">Select State or Province</option>
+                <option value="CT">Connecticut</option>
+                <option value="NY">New York</option>
+                <option value="CT">Massachussets</option>
+            </select>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="comments">Leave your comments below</label><br>
+            <textarea rows="10" cols="50" name="comments" id="comments" placeholder="Enter your comments"></textarea>
+        </p>
+        <fieldset>
+            <legend>Dietary Preferences</legend>
+            <input type="checkbox" name="diet" id="chicken" value="chicken">
+            <label for="chicken">Chicken</label>
+            <input type="checkbox" name="diet" id="steak" value="steak">
+            <label for="steak">Steak</label>
+            <input type="checkbox" name="diet" id="pasta" value="pasta">
+            <label for="pasta">Pasta</label>
+        </fieldset>
+        <p>
+            <button type="submit">Register</button>
+            <button type="reset">Clear Form</button>
+        </p>
+    </form>
+
+</body>
+
+</html>
